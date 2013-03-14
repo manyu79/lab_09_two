@@ -33,12 +33,15 @@ nsplug meta_vehicle_one.moos targ_Archie.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME1      START_POS=$START_POS1                  \
    VPORT="9001"       SHARE_LISTEN="9301"                    \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN             \
-   MASTER="true"
+   MASTER="true"      OFFSET="5"                             \
+   WIDTH="10"
+
 nsplug meta_vehicle_two.moos targ_Betty.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME2      START_POS=$START_POS2                  \
    VPORT="9002"       SHARE_LISTEN="9302"                    \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN             \
-   MASTER="false"
+   MASTER="false"     OFFSET="15"                             \
+   WIDTH="10"
 
 nsplug meta_vehicle_one.bhv targ_Archie.bhv -f VNAME=$VNAME1      \
     START_POS=$START_POS1 
