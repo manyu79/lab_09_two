@@ -38,7 +38,7 @@ nsplug meta_vehicle_one.moos targ_$VNAME1.moos -f WARP=$TIME_WARP  \
    MASTER="true"
    
 
-nsplug meta_vehicle.bhv targ_$VNAME1.bhv -f VNAME=$VNAME1      \
+nsplug meta_vehicle_one.bhv targ_$VNAME1.bhv -f VNAME=$VNAME1      \
     START_POS=$START_POS1 
 
 if [ ${JUST_MAKE} = "yes" ] ; then

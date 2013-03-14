@@ -40,9 +40,9 @@ nsplug meta_vehicle_two.moos targ_Betty.moos -f WARP=$TIME_WARP  \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN             \
    MASTER="false"
 
-nsplug meta_vehicle.bhv targ_Archie.bhv -f VNAME=$VNAME1      \
+nsplug meta_vehicle_one.bhv targ_Archie.bhv -f VNAME=$VNAME1      \
     START_POS=$START_POS1 
-nsplug meta_vehicle.bhv targ_Betty.bhv -f VNAME=$VNAME1      \
+nsplug meta_vehicle_two.bhv targ_Betty.bhv -f VNAME=$VNAME1      \
     START_POS=$START_POS2 
 
 nsplug meta_shoreside.moos targ_shoreside.moos -f WARP=$TIME_WARP \

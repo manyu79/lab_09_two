@@ -46,6 +46,7 @@ ProcessConfig = uFldShoreBroker
   bridge   = src=DEPLOY
   bridge   = src=RETURN
   bridge   = src=MOOS_MANUAL_OVERIDE
+  bridge   = src=TIME_OUT
 
   bridge   = src=APPCAST_REQ 
   bridge   = src=UHZ_OPTIONS_SUMMARY
@@ -53,7 +54,7 @@ ProcessConfig = uFldShoreBroker
   bridge   = src=UHZ_HAZARD_REPORT_$V,    alias=UHZ_HAZARD_REPORT
   bridge   = src=UHZ_DETECTION_REPORT_$V, alias=UHZ_DETECTION_REPORT
   bridge   = src=HAZARDSET_REQUEST_$V,    alias=HAZARDSET_REQUEST
-  bridge   = src=HAZARDSET_REQUEST,    alias=HAZARDSET_REQUEST
+  bridge   = src=HAZARDSET_REQUEST
 }
 
 //--------------------------------------------------
@@ -64,10 +65,10 @@ ProcessConfig = uFldNodeComms
   AppTick       = 2
   CommsTick     = 2
 
-  comms_range          = 100
-  critical_range       = 25
+  comms_range          = 10000000
+  critical_range       = 250000
   min_msg_interval     = 20
-  max_msg_length       = 1000
+  max_msg_length       = 1000000000
   groups               = true
   view_node_rpt_pulses = true
 }
@@ -154,8 +155,9 @@ ProcessConfig = pMarineViewer
   button_one   = MOOS_MANUAL_OVERIDE=false 
   button_one   = RETURN=false
   button_one   = HAZARD_SEARCH_START=true
-  button_three   = RETURN # RETURN=true
-  
+  button_three = RETURN # RETURN=true
+  button_four  = TIMEOUT # TIME_OUT=true
   button_two   = REQ_REPORT  # HAZARDSET_REQUEST=true
+
 }
 
