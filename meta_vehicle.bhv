@@ -40,7 +40,7 @@ Behavior = BHV_Waypoint
   perpetual  = true
   endflag    = RETURN = false
   endflag    = DEPLOY = false
-  endflag    = HAZARDSET_REQUEST = true
+  endflag    = TIME_OUT = true
   endflag    = NODE_MESSAGE_LOCAL = src_node=archie,dest_node=betty,var_name=SURVEY,string_val=COMPLETE
 
          speed = 2.0
