@@ -29,11 +29,11 @@ SHORE_LISTEN="9300"
 VNAME2="Betty"    # The second  vehicle community
 START_POS2="0,0"  
 
-nsplug meta_vehicle.moos targ_Archie.moos -f WARP=$TIME_WARP  \
+nsplug meta_vehicle_one.moos targ_Archie.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME1      START_POS=$START_POS1                  \
    VPORT="9001"       SHARE_LISTEN="9301"                    \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN
-nsplug meta_vehicle.moos targ_Betty.moos -f WARP=$TIME_WARP  \
+nsplug meta_vehicle_two.moos targ_Betty.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME2      START_POS=$START_POS2                  \
    VPORT="9002"       SHARE_LISTEN="9302"                    \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN
