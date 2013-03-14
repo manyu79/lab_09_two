@@ -62,7 +62,7 @@ Behavior = BHV_ConstantDepth
 }
 
 //--------------------------------------------
-Behavior = uTimerScript
+Behavior = BHV_uTimerScript
 {
   name		= report_time
   pwt 		= 100
