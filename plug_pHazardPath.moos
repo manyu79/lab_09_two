@@ -6,6 +6,6 @@ ProcessConfig = pHazardPath
   AppTick	= 4
   CommsTick	= 4
 
-  offset	= $(OFFSET)
-  start_offset	= $(WIDTH)
+  offset	= $(WIDTH)
+  start_offset	= $(OFFSET)
 }
