@@ -30,7 +30,7 @@ done
 START_POS1="0,0"  
 SHORE_LISTEN="9300"
 
-nsplug meta_vehicle.moos targ_$VNAME1.moos -f WARP=$TIME_WARP  \
+nsplug meta_vehicle_two.moos targ_$VNAME1.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME1      START_POS=$START_POS1                  \
    VPORT="9001"       SHARE_LISTEN="9301"                    \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN
