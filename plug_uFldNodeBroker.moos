@@ -6,17 +6,11 @@ ProcessConfig = uFldNodeBroker
   AppTick   = 1
   CommsTick = 1
 
-<<<<<<< HEAD
-  //TRY_SHORE_HOST = pshare_route=192.168.1.150:$(SHORE_LISTEN)
-  TRY_SHORE_HOST = pshare_route=localhost:$(SHORE_LISTEN)
-  //TRY_SHORE_HOST = pshare_route=18.111.111.60:$(SHORE_LISTEN)
-  TRY_SHORE_HOST = pshare_route=18.111.54.44:$(SHORE_LISTEN)
-=======
+
 //  TRY_SHORE_HOST = pshare_route=192.168.1.150:$(SHORE_LISTEN)
   TRY_SHORE_HOST = pshare_route=localhost:$(SHORE_LISTEN)
 //  TRY_SHORE_HOST = pshare_route=18.111.111.60:$(SHORE_LISTEN)
   TRY_SHORE_HOST = pshare_route=18.111.121.129:$(SHORE_LISTEN)
->>>>>>> 7dde7cb73b86135d296054b465e0d08715b344f5
 
   BRIDGE = src=VIEW_POLYGON
   BRIDGE = src=VIEW_POINT
