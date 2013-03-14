@@ -53,6 +53,7 @@ ProcessConfig = uFldShoreBroker
   bridge   = src=UHZ_HAZARD_REPORT_$V,    alias=UHZ_HAZARD_REPORT
   bridge   = src=UHZ_DETECTION_REPORT_$V, alias=UHZ_DETECTION_REPORT
   bridge   = src=HAZARDSET_REQUEST_$V,    alias=HAZARDSET_REQUEST
+  bridge   = src=HAZARDSET_REQUEST,    alias=HAZARDSET_REQUEST
 }
 
 //--------------------------------------------------
@@ -155,6 +156,6 @@ ProcessConfig = pMarineViewer
   button_one   = HAZARD_SEARCH_START=true
   button_three   = RETURN # RETURN=true
   
-  button_two   = REQ_REPORT  # HAZARDSET_REQUEST_ARCHIE=true
+  button_two   = REQ_REPORT  # HAZARDSET_REQUEST=true
 }
 
