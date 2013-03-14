@@ -34,7 +34,9 @@ SHORE_IP="9300"
 nsplug meta_vehicle_one.moos targ_$VNAME1.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME1      START_POS=$START_POS1                  \
    VPORT="9001"       SHARE_LISTEN="9301"                    \
-   VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN
+   VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN             \
+   MASTER="true"
+   
 
 nsplug meta_vehicle.bhv targ_$VNAME1.bhv -f VNAME=$VNAME1      \
     START_POS=$START_POS1 
