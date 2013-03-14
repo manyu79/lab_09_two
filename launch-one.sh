@@ -35,7 +35,7 @@ nsplug meta_vehicle.moos targ_$VNAME1.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME1      START_POS=$START_POS1                  \
    VPORT="9001"       SHARE_LISTEN="9301"                    \
    VTYPE=UUV          SHORE_LISTEN=$SHORE_LISTEN             \
-   MASTER="true"      OFFSET="5"                             \
+   MASTER="true"      OFFSET="0"                             \
    WIDTH="10"
    
 
