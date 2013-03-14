@@ -2,6 +2,7 @@
 
 initialize   DEPLOY = false
 initialize   RETURN = false
+initialize   TIME_OUT = false
 
 //----------------------------------------------
 Behavior = BHV_Waypoint
@@ -62,12 +63,13 @@ Behavior = BHV_ConstantDepth
 }
 
 //--------------------------------------------
-Behavior = BHV_uTimerScript
+Behavior = BHV_TimerScript
 {
   name		= report_time
   pwt 		= 100
-  condition = DEPLOY = true
+  condition 	= DEPLOY = true
+  duration   	= 8950 
 
-  event= var=TIME_OUT, val=true, time=8950
+  endflag	= TIME_OUT=true
 }
 
