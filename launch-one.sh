@@ -29,6 +29,7 @@ done
 #VNAME1="archie"    # The first  vehicle community
 START_POS1="0,0"  
 SHORE_LISTEN="9300"
+SHORE_IP="9300"
 
 nsplug meta_vehicle.moos targ_$VNAME1.moos -f WARP=$TIME_WARP  \
    VNAME=$VNAME1      START_POS=$START_POS1                  \

@@ -10,7 +10,6 @@ ProcessConfig = uFldNodeBroker
   TRY_SHORE_HOST = pshare_route=localhost:$(SHORE_LISTEN)
   TRY_SHORE_HOST = pshare_route=18.111.111.60:$(SHORE_LISTEN)
 
-
   BRIDGE = src=VIEW_POLYGON
   BRIDGE = src=VIEW_POINT
   BRIDGE = src=VIEW_SEGLIST
