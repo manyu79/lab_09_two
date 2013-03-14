@@ -61,3 +61,13 @@ Behavior = BHV_ConstantDepth
   summitdelta = 20
 }
 
+//--------------------------------------------
+Behavior = uTimerScript
+{
+  name		= report_time
+  pwt 		= 100
+  script_atomic = DEPLOY = true
+
+  event= var=TIME_OUT, val=true, time=8950
+}
+
